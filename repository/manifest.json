@@ -1,13 +1,13 @@
-﻿[{
-    "owner":  "BLCKSNAKE",
+[{
+    "owner":  "Marshmello0w",
     "versions":  [
                      {
-                         "changelog":  "v0.2.0.6: Audience/device/role/user targeting, admin UI overhaul with consistent design system, and a full security hardening pass (analytics rate limiting, impression memory cap, input length limits, safe path validation, crypto-random session IDs, EOL dependency removal).",
-                         "version":  "0.2.0.6",
+                         "changelog":  "v0.3.0.0: Upgraded Jellyfin dependencies (Jellyfin.Controller, Jellyfin.Model) to version 12.1.0.",
+                         "version":  "0.3.0.0",
                          "checksum":  "986f745481d63c9b32ca01f8a92d67de",
-                         "timestamp":  "2026-04-19T01:26:11Z",
-                         "targetAbi":  "10.11.0.0",
-                         "sourceUrl":  "https://github.com/blcksnake/jellyfin-admin-announcements-plugin/releases/download/v0.2.0.6/Announcements_0.2.0.6.zip"
+                         "timestamp":  "2026-09-16T12:00:00Z",
+                         "targetAbi":  "12.1.0.0",
+                         "sourceUrl":  "https://github.com/Marshmello0w/jellyfin-admin-announcements-plugin/releases/download/v0.3.0.0/Announcements_0.3.0.0.zip"
                      }
                  ],
     "overview":  "Display admin announcements with analytics, tags, and diagnostics in the Jellyfin web UI.",
@@ -15,5 +15,5 @@
     "guid":  "b0f1f4f0-3f5a-4a9b-9a0b-a11c0ce00001",
     "name":  "Announcements",
     "description":  "Server-wide announcements and maintenance banners with analytics, tags, admin quality-of-life actions, and diagnostics for non-standard installations.",
-    "imageUrl":  "https://raw.githubusercontent.com/BLCKSNAKE/jellyfin-admin-announcements-plugin/main/docs/images/jellyfin-admin-announcements-plugin-logo.png"
+    "imageUrl":  "https://raw.githubusercontent.com/Marshmello0w/jellyfin-admin-announcements-plugin/main/docs/images/jellyfin-admin-announcements-plugin-logo.png"
 }]

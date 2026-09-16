@@ -2,6 +2,12 @@
 
  All notable changes to this project will be documented in this file.
 
+## 0.3.0.0 - 2026-09-16
+
+- **Update**: Upgraded Jellyfin dependencies (`Jellyfin.Controller`, `Jellyfin.Model`) to version `12.1.0`.
+- **Update**: Bumped TargetAbi to `12.1.0.0`.
+- **Update**: Rebranded repository links for self-hosting.
+
 ## 0.2.0.6 - 2026-04-18
 
 - Added audience, device, role, and specific-user targeting for announcements.
