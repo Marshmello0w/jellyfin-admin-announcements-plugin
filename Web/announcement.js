@@ -5,7 +5,7 @@
     marker.style.display = 'none';
     document.documentElement.appendChild(marker);
 
-    const API_BASE = '/Plugins/Announcements';
+    const API_BASE = (window.ApiClient && typeof window.ApiClient.getUrl === 'function') ? window.ApiClient.getUrl('Plugins/Announcements') : '/Plugins/Announcements';
     const API_PATH = API_BASE;
     const STORAGE_KEY_PERM = 'announcements.dismissed.permanent';
     const STORAGE_KEY_SESSION = 'announcements.dismissed.session';

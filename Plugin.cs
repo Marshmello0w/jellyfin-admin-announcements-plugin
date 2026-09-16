@@ -360,6 +360,11 @@ public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
             Add("/opt/jellyfin/web/index.html");
             Add("/opt/jellyfin/jellyfin-web/index.html");
             Add("/opt/jellyfin/jellyfin/web/index.html");
+            Add("/app/jellyfin/jellyfin-web/index.html");
+            Add("/app/jellyfin/web/index.html");
+            Add("/app/jellyfin-web/index.html");
+            Add("/var/www/html/jellyfin/index.html");
+            Add("/var/www/jellyfin/index.html");
             Add("/Applications/Jellyfin.app/Contents/Resources/jellyfin-web/index.html");
             Add("/Applications/Jellyfin.app/Contents/Resources/web/index.html");
         }
