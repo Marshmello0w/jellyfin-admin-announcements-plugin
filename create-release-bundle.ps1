@@ -3,6 +3,7 @@
 
 param(
     [string]$Version = "0.3.0.0",
+    [string]$targetAbi = "10.9.0.0",
     [switch]$SkipBuild
 )
 
