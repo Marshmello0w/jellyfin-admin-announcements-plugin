@@ -4,6 +4,7 @@
                      {
                          "changelog":  "v0.3.0.1: Force cache reset by bumping version for Jellyfin 12.1.0.",
                          "version":  "0.3.0.1",
+                         "checksum": "8856e5f6e4daf561f118a1f6942be095",
                          "timestamp":  "2026-09-16T12:00:00Z",
                          "targetAbi":  "12.1.0.0",
                          "sourceUrl":  "https://github.com/Marshmello0w/jellyfin-admin-announcements-plugin/releases/download/v0.3.0.1/Announcements_0.3.0.1.zip"
