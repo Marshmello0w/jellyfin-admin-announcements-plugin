@@ -2,7 +2,7 @@
 # Builds publish output and creates a clean zip for GitHub/Jellyfin repository distribution.
 
 param(
-    [string]$Version = "0.3.0.0",
+    [string]$Version = "0.3.0.1",
     [string]$targetAbi = "12.1.0.0",
     [switch]$SkipBuild
 )
@@ -43,7 +43,6 @@ foreach ($file in $requiredFiles) {
 }
 
 Copy-Item (Join-Path $PSScriptRoot "meta.json") (Join-Path $bundleDir "meta.json") -Force
-Copy-Item (Join-Path $PSScriptRoot "manifest.json") (Join-Path $bundleDir "manifest.json") -Force
 
 if (Test-Path $zipPath) {
     Remove-Item $zipPath -Force
