@@ -7,7 +7,7 @@
   "name": "Announcements",
   "overview": "Display admin announcements with analytics, tags, and diagnostics in the Jellyfin web UI.",
   "owner": "Marshmello0w",
-  "targetAbi": "12.1.0",
+  "targetAbi": "12.1.0.0",
   "timestamp": "2026-04-18T00:00:00Z",
-  "version": "0.3.0.2"
+  "version": "0.3.0.0"
 }

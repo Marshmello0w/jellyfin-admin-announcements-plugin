@@ -2,8 +2,8 @@
 # Builds publish output and creates a clean zip for GitHub/Jellyfin repository distribution.
 
 param(
-    [string]$Version = "0.3.0.1",
-    [string]$targetAbi = "12.1.0.0",
+    [string]$Version = "0.3.0.2",
+    [string]$targetAbi = "12.1.0",
     [switch]$SkipBuild
 )
 
