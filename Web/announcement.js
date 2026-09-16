@@ -659,6 +659,8 @@
         const displayed = getDisplayedIds();
         const toShow = loginAwareList.filter(a => !displayed.includes(a.id));
         toShow.forEach(a => showAnnouncement(a));
+        } catch (err) {
+            console.error("Announcement Plugin Crash Error: ", err);
         } finally {
             pollInFlight = false;
         }

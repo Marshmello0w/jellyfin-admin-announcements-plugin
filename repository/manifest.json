@@ -3,11 +3,11 @@
     "versions":  [
                      {
                          "changelog":  "v0.3.0.5: Added auto-detection and clickable rendering for URLs in announcements.",
-                         "version":  "0.3.0.5",
+                         "version":  "0.3.0.6",
                          "checksum": "752ac332ac86b6e168365144fd4dfc79",
                          "timestamp":  "2026-09-16T12:00:00Z",
                          "targetAbi":  "12.1.0",
-                         "sourceUrl":  "https://github.com/Marshmello0w/jellyfin-admin-announcements-plugin/releases/download/v0.3.0.5/Announcements_0.3.0.5.zip"
+                         "sourceUrl":  "https://github.com/Marshmello0w/jellyfin-admin-announcements-plugin/releases/download/v0.3.0.6/Announcements_0.3.0.6.zip"
                      }
                  ],
     "overview":  "Display admin announcements with analytics, tags, and diagnostics in the Jellyfin web UI.",
