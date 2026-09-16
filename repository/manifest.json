@@ -6,7 +6,7 @@
                          "version":  "0.3.0.0",
                          "checksum":  "dc52fd470ec399dbaacbcecb7dbcb265",
                          "timestamp":  "2026-09-16T12:00:00Z",
-                         "targetAbi":  "10.9.0.0",
+                         "targetAbi":  "12.1.0.0",
                          "sourceUrl":  "https://github.com/Marshmello0w/jellyfin-admin-announcements-plugin/releases/download/v0.3.0.0/Announcements_0.3.0.0.zip"
                      }
                  ],
