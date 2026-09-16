@@ -4,6 +4,7 @@
                      {
                          "changelog":  "v0.3.0.2: Final fix for Jellyfin 12.1 ABI strict parsing rules.",
                          "version":  "0.3.0.2",
+                         "checksum": "d052ab0c892458260ddd55690447ebc4",
                          "timestamp":  "2026-09-16T12:00:00Z",
                          "targetAbi":  "12.1.0",
                          "sourceUrl":  "https://github.com/Marshmello0w/jellyfin-admin-announcements-plugin/releases/download/v0.3.0.2/Announcements_0.3.0.2.zip"
