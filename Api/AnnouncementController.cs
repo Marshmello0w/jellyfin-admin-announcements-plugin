@@ -161,14 +161,14 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Returns all announcements including inactive (admin only).</summary>
     [HttpGet("Admin")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public ActionResult<IReadOnlyList<Announcement>> GetAll()
         => Ok(_store.GetAll());
 
     /// <summary>Creates or updates an announcement (admin only).</summary>
     [HttpPost("Admin")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<Announcement>> Upsert([FromBody] Announcement? announcement)
@@ -248,7 +248,7 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Deletes an announcement by ID (admin only).</summary>
     [HttpDelete("Admin/{id}")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult Delete(string id)
     {
@@ -268,7 +268,7 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Updates display settings (admin only).</summary>
     [HttpPost("Admin/Settings")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public ActionResult<DisplaySettingsDto> SaveSettings([FromBody] DisplaySettingsDto? settings)
@@ -317,7 +317,7 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Gets path configuration for troubleshooting jellyfin-web detection.</summary>
     [HttpGet("Admin/PathConfig")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public ActionResult<PathConfigDto> GetPathConfig()
     {
@@ -336,7 +336,7 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Updates path configuration for troubleshooting jellyfin-web detection.</summary>
     [HttpPost("Admin/PathConfig")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public ActionResult<PathConfigDto> SavePathConfig([FromBody] PathConfigDto? settings)
@@ -365,7 +365,7 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Returns operational diagnostics: injection mode, resolved path, startup time.</summary>
     [HttpGet("Admin/Diagnostics")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public ActionResult<DiagnosticsDto> GetDiagnostics()
     {
@@ -437,7 +437,7 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Duplicates an existing announcement with a new ID, retaining all fields. The copy starts disabled.</summary>
     [HttpPost("Admin/{id}/Duplicate")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public ActionResult<Announcement> Duplicate(string id)
@@ -450,7 +450,7 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Archives or unarchives an announcement.</summary>
     [HttpPost("Admin/{id}/Archive")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public IActionResult SetArchived(string id, [FromBody] ToggleDto? dto)
@@ -463,7 +463,7 @@ public class AnnouncementController : ControllerBase
 
     /// <summary>Enables or disables (pauses) an announcement.</summary>
     [HttpPost("Admin/{id}/Enable")]
-    [Authorize(Policy = "RequiresElevation")]
+    [Authorize(Roles = "Administrator")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public IActionResult SetEnabled(string id, [FromBody] ToggleDto? dto)

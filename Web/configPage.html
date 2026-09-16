@@ -810,7 +810,9 @@
             function apiUrl(path) { return ApiClient.getUrl(path); }
 
             function authHeaders(extra) {
-                var headers = { 'X-Emby-Token': ApiClient.accessToken() };
+                var headers = {
+                    'Authorization': 'MediaBrowser Token="' + ApiClient.accessToken() + '"'
+                };
                 if (extra) { Object.keys(extra).forEach(function (k) { headers[k] = extra[k]; }); }
                 return headers;
             }
