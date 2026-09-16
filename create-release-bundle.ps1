@@ -22,7 +22,7 @@ if (-not (Test-Path $publishDir)) {
 }
 
 if (Test-Path $bundleDir) {
-    cmd /c rmdir /s /q "$bundleDir"
+    Remove-Item -Recurse -Force $bundleDir
 }
 
 New-Item -ItemType Directory -Path $bundleDir -Force | Out-Null
