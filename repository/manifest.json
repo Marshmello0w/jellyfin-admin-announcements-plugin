@@ -4,7 +4,7 @@
                      {
                          "changelog":  "v0.3.0.0: Upgraded Jellyfin dependencies (Jellyfin.Controller, Jellyfin.Model) to version 12.1.0.",
                          "version":  "0.3.0.0",
-                         "checksum":  "986f745481d63c9b32ca01f8a92d67de",
+                         "checksum":  "355e18467567a2f74b546cecf8fd2734",
                          "timestamp":  "2026-09-16T12:00:00Z",
                          "targetAbi":  "12.1.0.0",
                          "sourceUrl":  "https://github.com/Marshmello0w/jellyfin-admin-announcements-plugin/releases/download/v0.3.0.0/Announcements_0.3.0.0.zip"
