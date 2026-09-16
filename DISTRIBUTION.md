@@ -50,7 +50,7 @@ For community plugin feeds/catalogs, provide:
 
 To generate a repository manifest compatible with Jellyfin Repositories:
 
-- powershell -ExecutionPolicy Bypass -File ./build-repository-manifest.ps1 -SourceUrl "https://github.com/blcksnake/jellyfin-admin-announcements-plugin/releases/download/v<version>/Announcements_<version>.zip" -Version "<version>" -ZipPath "./release/Announcements_<version>.zip" -OutputPath "./repository/manifest.json"
+- powershell -ExecutionPolicy Bypass -File ./build-repository-manifest.ps1 -SourceUrl "https://github.com/Marshmello0w/jellyfin-admin-announcements-plugin/releases/download/v<version>/Announcements_<version>.zip" -Version "<version>" -ZipPath "./release/Announcements_<version>.zip" -OutputPath "./repository/manifest.json"
 
 Then host `repository/manifest.json` at a stable public URL and share that URL.
 
@@ -58,7 +58,7 @@ Do not publish an updated `repository/manifest.json` until the final zip asset e
 
 Recommended repository URL to add in Jellyfin:
 
-- https://raw.githubusercontent.com/blcksnake/jellyfin-admin-announcements-plugin/main/repository/manifest.json
+- https://raw.githubusercontent.com/Marshmello0w/jellyfin-admin-announcements-plugin/main/repository/manifest.json
 
 Common repository error fix:
 

@@ -6,8 +6,8 @@ Server-wide announcements and maintenance banners for Jellyfin.
 
 ## Status
 
-- Version: 0.2.0.6
-- Target Jellyfin ABI: 10.11.0.0
+- Version: 0.3.0.0
+- Target Jellyfin ABI: 12.1.0.0
 - Framework: .NET 9
 
 ## Features
@@ -44,7 +44,7 @@ Install directly from Jellyfin using a custom repository URL.
 
 Repository URL to add in Jellyfin:
 
-- https://raw.githubusercontent.com/blcksnake/jellyfin-admin-announcements-plugin/main/repository/manifest.json
+- https://raw.githubusercontent.com/Marshmello0w/jellyfin-admin-announcements-plugin/main/repository/manifest.json
 
 Steps:
 
@@ -71,7 +71,7 @@ For release packaging and repository publishing workflow, see DISTRIBUTION.md.
 
 ## Compatibility Notes
 
-- Plugin is tested with Jellyfin 10.11.8.
+- Plugin is tested with Jellyfin 12.1.0.
 - Auto web injection now supports Windows, Linux, macOS, and common container layouts.
 - Diagnostics in the admin page show whether the plugin is running through JS Injector or direct index patching.
 - User-targeted announcements now re-evaluate automatically on login, logout, and same-tab account switching.

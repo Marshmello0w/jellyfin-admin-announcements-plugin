@@ -2,8 +2,8 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$SourceUrl,
 
-    [string]$Version = "0.2.0.6",
-    [string]$ZipPath = ".\release\Announcements_0.2.0.6.zip",
+    [string]$Version = "0.3.0.0",
+    [string]$ZipPath = ".\release\Announcements_0.3.0.0.zip",
     [string]$OutputPath = ".\repository\manifest.json"
 )
 
@@ -31,7 +31,7 @@ $pluginEntry = @{
     name = $meta.name
     overview = $meta.overview
     description = $meta.description
-    owner = "BLCKSNAKE"
+    owner = "Marshmello0w"
     category = $meta.category
     imageUrl = $meta.imageUrl
     versions = @(
