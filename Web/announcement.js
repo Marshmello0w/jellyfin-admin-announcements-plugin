@@ -407,6 +407,23 @@
         return d.toLocaleString();
     }
 
+    function escapeHtml(unsafe) {
+        return (unsafe || '').toString()
+             .replace(/&/g, "&amp;")
+             .replace(/</g, "&lt;")
+             .replace(/>/g, "&gt;")
+             .replace(/"/g, "&quot;")
+             .replace(/'/g, "&#039;");
+    }
+
+    function linkify(text) {
+        const safe = escapeHtml(text);
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+        return safe.replace(urlRegex, function(url) {
+            return '<a href="' + url + '" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;color:inherit;">' + url + '</a>';
+        });
+    }
+
     function levelLabel(level) {
         const v = (level || 'info').toLowerCase();
         if (v === 'danger') return 'Critical';
@@ -463,7 +480,7 @@
 
         const msg = document.createElement('p');
         msg.className = 'jf-announcement-message';
-        msg.textContent = a.message || '';
+        msg.innerHTML = linkify(a.message || '');
 
         const meta = document.createElement('div');
         meta.className = 'jf-announcement-meta';

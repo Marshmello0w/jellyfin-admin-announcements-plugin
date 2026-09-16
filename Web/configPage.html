@@ -822,6 +822,14 @@
                 return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
             }
 
+            function linkify(value) {
+                var safe = esc(value);
+                var urlRegex = /(https?:\/\/[^\s]+)/g;
+                return safe.replace(urlRegex, function(url) {
+                    return '<a href="' + url + '" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;color:inherit;">' + url + '</a>';
+                });
+            }
+
             function pad2(n) { return String(n).padStart(2, '0'); }
 
             function toDateTimeLocalValue(d) {
@@ -1219,7 +1227,7 @@
                             (item.isArchived ? pill('archived', 'arch') : '') +
                         '</div>' +
                         '<div class="jf-ann-card__title">' + esc(item.title) + '</div>' +
-                        '<div class="jf-ann-card__text">' + esc(item.message) + '</div>' +
+                        '<div class="jf-ann-card__text">' + linkify(item.message) + '</div>' +
                         '<div class="jf-ann-card__meta">Starts: ' + esc(starts) + ' &nbsp;&middot;&nbsp; Ends: ' + esc(ends) + '</div>' +
                         '<div class="jf-ann-card__meta">Scope: ' + esc(scope) + ' &nbsp;&middot;&nbsp; ' + esc(dismissRule) + '</div>' +
                         '<div class="jf-ann-card__meta">' + esc(targeting) + '</div>' +
